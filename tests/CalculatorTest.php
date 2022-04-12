@@ -18,4 +18,11 @@ class CalculatorTest extends TestCase
         $value = $adder->evaluate(2, 3);
         $this->assertEquals($value, -1);
     }
+    
+    public function testMultiplyOperation(): void
+    {
+        $adder = new Calculator("multiply");
+        $value = $adder->evaluate(2, 3);
+        $this->assertEquals($value, 6);
+    }
 }
