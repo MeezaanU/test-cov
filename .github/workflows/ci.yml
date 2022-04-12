@@ -27,6 +27,6 @@ jobs:
       - name: Upload to Code Cov
         uses: codecov/codecov-action@v2
         with:
-          token: ${{ secrets.MZ_CODE_COV_SECRET_TOKEN}}
+          token: ${{ secrets.MZ_CODE_COV_SECRET_TOKEN }}
           files: ./coverage.xml
           verbose: true
